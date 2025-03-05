@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+.zen-dots-regular {
+    font-family: "Zen Dots", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --fonte-destaque:'idroid', cursive;
+    --fonte-titulo : "Zen Dots";
+
+    --color-00:#063d1e;
+    --color-01:#1a5c37;
+    --color-02:#438042;
+    --color-03:#5EB25C;
+    --color-04:#83E1AD;
+    --color-05:#C9F2C7;
+
+    --color-06:#F2F2F2;
+    --color-07:#E9FAFF;
+    --color-08:#BFBFBF;
+    --color-09:#0F0F0F;
+    --color-10:#D9D9D9;
+    --color-11:#028f00;
+    --color-12:#03A688;
+    --color-13:#A9D9D0;
+    
+    --degrade-cabeçalho:linear-gradient(-45deg, #20c065, #158344, #09351c);
+    --degrade-interno:linear-gradient(45deg, #A9D9D0, #D9D9D9);
+    --degrade-externo:linear-gradient(45deg, #88b485, #c7ffc5);
+    --degrade-title:linear-gradient(to right, #a0cec5 ,#D9D9D9);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    line-height: 1.75em;
+}
+
+body {
+    background-image: var(--degrade-externo);
+    font-family: var(--fonte-padrão);
+
+}
+
+body h1 {
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+body h2 {
+    font-family: var(--fonte-destaque);
+    text-indent: 25px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+main a ::after {
+    content: '\00A0\1F517\00A0';
+}
+
+main a {
+    background-color: var(--color-13);
+    padding: 2.5px;
+    border-radius: 5px;
+
+}
+
+main a:hover {
+    text-decoration: none;
+    color: var(--color-);
+}
+
+header a:hover {
+    background-color: var(--color-12);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--color-09);
+}
+
+body p {
+    font-size: 1.2em;
+    text-indent: 25px;
+    font-family:var(--fonte-padrão);
+    
+
+
+}
+
+body strong {
+    color: var(--color-12);
+    font-size: large;
+}
+
+header {
+    background-image: var(--degrade-cabeçalho);
+    padding-top: 50px;
+    color: white;
+    min-height: 130px;
+    box-shadow: 5px 5px 15px #00000096;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 2.5em;
+}
+
+header p {
+    text-align: center;
+    margin: auto;
+    max-width: 575px;
+    font-size: 1.3em;
+}
+
+header a {
+    text-align: left;
+    color: white;
+    margin-bottom: 10%;padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.1em;   
+}
+
+header .rodape_links{
+    max-width: 500px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 45px;
+    font-size: large;
+    
+}
+
+main {
+    background-image: var(--degrade-interno);
+    margin:auto;
+    padding: 25px;
+    max-width: 950px;
+    min-width: 400px;
+    margin-bottom: 1%;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 5px 5px #0000004f;
+}
+
+main > h2 {
+    color: var(--color-01);
+    background-image: var(--degrade-title);
+    font-size: 1.6em;
+    margin-bottom: 2%;
+}
+
+main h2.subtitle {
+    color: var(--color-00);
+    background-image: none;
+    font-size: 1.9em;
+    margin-top: 0px;
+   
+}
+
+main p {
+    margin-bottom: 2%;
+}
+
+main img {
+    margin: auto;
+    display: block; 
+    padding-bottom: 15px; 
+}
+
+div.fundo_video {
+    border: 15px solid var(--color-01);
+    max-width: 960px;
+    margin: auto;
+}
+
+div > iframe {
+    width: 100%;
+    aspect-ratio:16 / 9;
+   
+}
+
+aside {
+    background-color: var(--color-04);
+    border-radius: 10px 10px 10px 10px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 15px 1px 15px;
+    box-shadow: 5px 5px 15px #00000096;
+}
+
+aside.versões_do_Android {
+    box-shadow: 0px 0px 0px ;
+}
+
+ul {
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside h3 {
+    background-color: var(--color-11);
+    padding: 1%;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5em;
+    margin: 15px -15px;
+    color: var(--color-06);
+}
+
+aside p {
+    margin-top: 1%;
+}
+
+li abbr {
+    text-decoration: none;
+}
+
+.agradecimento {
+    padding-top: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer{
+    background-color: var(--color-01);
+    text-align: center;
+    color: var(--color-07);
+    background-image:linear-gradient(deg, #000000, #000000, #000000);
+    max-width: auto;
+    margin: auto;
+    font-size: large;
+    
+}
